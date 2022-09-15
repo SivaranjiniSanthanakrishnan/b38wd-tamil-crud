@@ -1,0 +1,93 @@
+<!-- Node and React Installation: -->
+
+1. Go to https://nodejs.org/en/download/ and download .msi for Windows, .pkg for macOS, x64 for Linux
+2. Double click on downloaded executable file and install Node JS.
+3. Click Next in the popup which shows while installing Node JS
+4. Open Command Prompt
+5. Check whether Node is installed correctly
+   node -v
+6. Along with Node JS NPM(Node Package Manager) will also installed, Check the version of NPM also by typing the cmd
+   npm -v
+7. Using npm we have to install React JS Globally
+   npm i react -g
+8. After installing react, install create-react-app to create your first React Application
+   npm i create-react-app -g
+9. Create your first react Application. Move to the respected folder in your cmd prompt and then type the cmd,
+   npx create-react-app app-name --use-npm
+10. Open the created folder in VS Code which is your React Application.
+11. Open terminal in VS Code and start react application by typing command 
+   npm start 
+   
+25-08-22:
+
+1. Folder Structure --Done 
+2. NPM Commands 
+3. Component
+   a. Functional Component
+   b. Class Component
+
+Package.json:
+   System generated file which contains list all the libraries needed to run react Application. Contains Author Name and version of application also
+Package-lock.json:
+   System generated file which contains list of all dependencies of dependency libraries.
+node_modules:
+   Which stores the physical library 
+src:
+   All source code, components should be written inside src. src may contains sub folders but coding should be inside src. First file to be executed in index.js.
+public:
+   User uploaded images, logos, index.html can be stored inside public folder
+Port:
+   React Application will run in certain physical local port 
+   and no two application can be run in a single port.
+
+
+Component:
+   Component are independent reusable code. They serve the same purpose as 
+   Javascript functions but work in isolation and return HTML.
+
+Functional Component: 
+   A functional Component works same as Javascript Function, but it gets props 
+instead of parameter and returns HTML code. In Functional Component return is mandatory.
+
+Class Component:
+   Class Component behaves exactly as the Javascript Class. It contains constructor, render method as default functions and also it can initialize state variable. 
+   Whenever we are rendering the component from Parent Class the Constructor from the child class will be executed. 
+
+Props:
+   Props is a properties which is passed from parent component to child component. Props can be of any datatype.
+
+
+State:
+   The state variable is where you store the property values that belongs to that component.
+ When state variable changes it re-renders the component.
+ 1. State variable can be accessed anywhere inside the class, and it belongs to that class 
+ 2. Once you change the state variable render function will be called again (re-rendered)
+
+
+Topics saw on 26-08-22
+ Functional and Class Component 
+ Export, Import and Render a Component
+ Passing props and using props 
+ State variable 
+
+Topics on 29-08-22
+   1. React hooks => Hooks allow functional component to have access to state 
+      and other React Features. Because of this component, class components are generally
+      no longer needed. 
+      a. useState => To maintain state variable inside Functional Component 
+         Syntax: const [stateName, stateUpdateFunction] = useState(initializationValue)
+      b. useEffect => Mounting Phase, Updating Phase , Dependency Array
+   2. Lifecycle Methods 
+      a. Mounting phase(componentDidMount),
+      b. Updating Phase (componentDidUpdate),
+      c. Unmounting Phase (componentWillUnmount)
+   3. Conditional Rendering => Render a component conditionally in HTML
+      a. Unmount 
+
+Topics on 30-08-22
+   1. Reuse a Component 
+
+Topics on 01-09-22
+   1. Unmounting phase / Lifecycle Method in Functional Component 
+   2. Communication from child to parent (Passing Callback function)
+

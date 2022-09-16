@@ -63,3 +63,9 @@ Status Codes:
    Response:
    Status Code _ : 200
    Response Data _ : Deleted Data
+
+CRUD 
+1. Read the data from API
+2. Populate the loaded data in Table
+3. Created a UI user form
+4. Handling a form => Controlled Form
